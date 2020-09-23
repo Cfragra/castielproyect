@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+@import './utils.css';
+@import './forms.css';
+@import './header.css';
+@import './access.css';
+@import './theme.css';
+@import './filters.css';
+@import './home.css';
+@import './translatorsList.css';
+@import './myProfile.css';
+@import './newProfile.css';
+@import './translator.css';
+@import './user.css';
+
+html {
+  box-sizing: border-box;
+  height: 100%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  height: 100%;
+}
+
+.container {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  height: 100vh;
+  background-color: var(--color-superlight);
+}
+
+footer {
+  background-color: var(--color-superdark);
+  min-height: 2rem;
+}
+
+footer p {
+  color: var(--color-light);
+  font-style: oblique;
+  font-size: var(--font-sm);
+}
+
+/* -- BASICS -- */
+h1 {
+  font-size: var(--font-xxl);
+}
+
+h2 {
+  margin: 0.5rem 0;
+}
+
+p {
+  font-size: var(--font-m);
+  padding: 0.5rem 0;
+  word-wrap: break-word;
+}
+
+pre {
+  font-size: var(--font-m);
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  list-style: none;
+}
+
+a {
+  font-size: var(--space-md);
+  text-decoration: none;
+  color: black;
+}
+
+button {
+  margin: 0 0.5rem;
+  padding: 0.5rem;
+  font-size: var(--font-sm);
+}
+
+.select-css {
+  display: block;
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  color: var(--color-superdark);
+  line-height: 1.3;
+  padding: 0.4em 1.4em 0.3em 0.8em;
+  width: 130px;
+  box-sizing: border-box;
+  margin: 0;
+  border: 1px solid #aaa;
+  box-shadow: 0 1px 0 1px var(--color-superdark);
+  border-radius: 0.3em;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: var(--color-superlight);
+  background-repeat: no-repeat, repeat;
+  background-position: right 0.7em top 50%, 0 0;
+  background-size: 0.65em auto, 100%;
+}
+.select-css::-ms-expand {
+  display: none;
+}
+.select-css:hover {
+  border-color: var(--color-dark);
+}
+.select-css:focus {
+  box-shadow: 0 0 0 3px -moz-mac-focusring;
+  color: var(--color-superdark);
+  outline: none;
+}
+.select-css option {
+  font-weight: normal;
+}
+
+@media (max-width: 835px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 740px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 380px) {
+  html {
+    font-size: 10px;
+  }
+}

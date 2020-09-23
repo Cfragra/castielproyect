@@ -1,0 +1,151 @@
+.translatorsList {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: auto;
+  margin-right: 0.1rem;
+  margin-bottom: 1rem;
+}
+
+.translatorsList > ul {
+  height: 100%;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.translatorsList > ul li {
+  margin: 0.2rem;
+}
+
+.translator-miniature {
+  display: grid;
+  grid-template-columns: 9rem 17rem;
+  border: 2px solid var(--color-light);
+  background-color: var(--color-superlight);
+  margin: 0.5rem;
+
+  height: 17.5rem;
+  overflow: hidden;
+  /* box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); */
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.translator-miniature:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.translator-miniature > :first-child {
+  align-items: center;
+  justify-content: space-between;
+  height: 17.5rem;
+}
+
+.translator-miniature > div {
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem;
+}
+.translator-miniature,
+.translator-miniature p.creation-date {
+  font-size: 1rem;
+  color: var(--color-medium);
+  padding: 0;
+}
+#translator-info {
+  margin: 0.5rem 0;
+  padding: 0.2rem;
+  background-color: var(--color-superlight);
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-left: 1px solid var(--color-superdark);
+  height: 100%;
+}
+
+#translator-info ul {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#translator-info ul li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#translator-info ul li:last-child {
+  margin-bottom: 0;
+}
+
+#translator-info ul li p {
+  padding: 0.2rem;
+}
+
+#main-content {
+  padding: 0.5rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  height: 100%;
+}
+
+#main-content div {
+  text-align: start;
+  margin: 0.2rem 0;
+  overflow: hidden;
+}
+#main-content-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#project-data {
+  overflow: hidden;
+}
+
+#project-data p {
+  word-wrap: break-word;
+  overflow: hidden;
+}
+
+.translatorsList button {
+  margin: 0;
+  background-color: transparent;
+}
+
+section.translatorsList p {
+  padding: 0.1rem;
+  /* width: 9rem; */
+}
+
+section.translatorsList .translator-miniature div#language-category {
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+
+.translatorsList p.category {
+  color: var(--color-medium);
+  font-size: 1.2rem;
+  padding: 0;
+}
+
+.translatorsList p.language {
+  color: var(--color-medium);
+  font-size: 1.2rem;
+  padding: 0;
+}
+
+h2.translator-name {
+  font-size: 1.2rem;
+  word-wrap: break-word;
+}
+p#translator-description {
+  font-size: 1rem;
+}

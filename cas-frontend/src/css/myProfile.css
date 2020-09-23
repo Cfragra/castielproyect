@@ -1,0 +1,90 @@
+#myProfile .home-body {
+  background-image: url('../images/fondo.jpeg');
+  background-size: cover;
+}
+
+form#profile input {
+  border: none;
+}
+
+div#myProfile-top .profile-photo {
+  margin-top: 1rem;
+}
+
+div#myProfile-top {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background-color: var(--color-dark);
+  margin-top: 5rem;
+}
+
+section form#profile {
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  background-color: var(--color-dark);
+  margin-bottom: 3rem;
+}
+
+#myProfile #myProfile-top,
+form#profile {
+  width: 25rem;
+  padding: 1rem 0 1rem 0;
+}
+
+h1.profile-name {
+  margin: 0.5rem 0 1rem 0;
+}
+
+fieldset.profile legend {
+  text-align: left;
+}
+
+fieldset.profile ul {
+  align-items: center;
+  padding-left: 0;
+}
+
+fieldset.profile label {
+  width: 100%;
+  text-align: left;
+  margin-bottom: 0.2rem;
+}
+
+fieldset.profile ul li {
+  display: flex;
+  flex-direction: column;
+}
+
+#upload-profile-photo {
+  display: grid;
+  grid-template-columns: 10.5rem 8rem 2.5rem;
+}
+
+input#input-avatar {
+  display: none;
+}
+label#select-avatar {
+  font-size: 1rem;
+  cursor: pointer;
+  background-color: var(--color-light);
+  border-radius: 10px;
+  padding: 0.55rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  /* margin-right: 1.5rem; */
+  word-wrap: break-word;
+  width: 8.5rem;
+  justify-self: end;
+}
+label#select-avatar:hover {
+  text-decoration: underline;
+}
+
+label#select-avatar:active {
+  background-color: var(--color-medium);
+}
+
+#myProfile #profile-form #spinner {
+  margin-top: 1rem;
+}

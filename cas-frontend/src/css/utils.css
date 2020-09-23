@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+div#root,
+input,
+button,
+p,
+h1,
+h2 {
+  font-family: 'Roboto', sans-serif;
+  color: black;
+}
+
+.body {
+  display: flex;
+  flex-direction: row;
+  overflow: auto;
+  height: 100%;
+}
+
+.home-body {
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+  width: 100%;
+}
+
+.centered-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-photo {
+  display: inline-block;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 1.5px solid var(--color-superdark);
+}
+
+.translators {
+  width: 100%;
+  /* min-width: 1134px; */
+  height: 100%;
+  /* min-height: 700px; */
+  display: flex;
+  flex-direction: row;
+}
+
+.translators-container {
+  /* height: 100%; */
+  width: 100%;
+  /* min-height: 700px; */
+  /* min-width: 852px; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#big-icon {
+  width: 11rem;
+  height: 11rem;
+}
+
+#medium-icon {
+  width: 7rem;
+  height: 7rem;
+}
+
+#small-icon {
+  height: 2.5rem;
+  width: 2.5rem;
+  min-height: 2.5rem;
+  min-width: 2.5rem;
+}
+
+#supersmall-icon {
+  height: 1.5rem;
+  width: 1.5rem;
+  margin-right: 5px;
+}
+
+#spinner.centered-container {
+  height: 100vh;
+}
+
+#spinner .MuiCircularProgress-colorPrimary {
+  color: var(--color-red);
+}
+
+#submit-button-div {
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.2rem;
+  height: 2.3rem;
+}
+button:focus {
+  outline: none;
+}
+
+button:hover {
+  text-decoration: underline;
+}
+button.form {
+  background-color: var(--color-superdark);
+  color: var(--color-superlight);
+}
+
+button.form:active {
+  background-color: var(--color-superdark);
+  color: var(--color-superlight);
+}
+
+button.gray {
+  background-color: var(--color-light);
+}
+
+button.gray:active {
+  background-color: var(--color-medium);
+}
+
+input {
+  width: 16rem;
+  height: 2rem;
+  padding-left: 0.5rem;
+  background-color: var(--color-superlight);
+  border: none;
+}
+
+.selectors {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.selectors > button {
+  background-color: transparent;
+  border-radius: 0px;
+}
+
+button#is-selected-line {
+  border-bottom: 2px solid black;
+}
+textarea {
+  background-color: var(--color-superlight);
+  padding: 0.5rem;
+  border: none;
+}
+
+.translators-container #empty-text {
+  text-align: center;
+  font-size: var(--font-m);
+}

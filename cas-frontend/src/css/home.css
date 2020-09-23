@@ -1,0 +1,46 @@
+section.home-image {
+  width: 100%;
+  /* min-width: 1134px; */
+  min-height: 28rem;
+  background-image: url('../images/languages.jpg');
+  background-size: cover;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+section.home-image p {
+  color: var(--color-superlight);
+}
+section.home-image p.first {
+  font-size: 2rem;
+  margin-top: 1rem;
+}
+section.home-image p.second {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  background-color: rgba(10, 10, 10, 0.6);
+  word-wrap: wrap;
+}
+
+@media (max-width: 630px) {
+  #home .projects {
+    flex-direction: column;
+  }
+
+  #home .filters {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #home .filters > section {
+    padding-bottom: 1rem;
+    border-bottom: 2px solid var(--color-light);
+  }
+
+  #home .projects-container {
+    min-height: 100%;
+  }
+}

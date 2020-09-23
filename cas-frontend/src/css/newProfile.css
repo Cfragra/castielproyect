@@ -1,0 +1,47 @@
+#newProfile .home-body {
+  background-image: url('../images/fondo.jpeg');
+  background-size: cover;
+}
+
+#newProfile form {
+  background-color: var(--color-dark);
+  padding: 2rem 0;
+  width: 600px;
+  border-radius: 10px;
+  margin: 2rem auto;
+}
+#newProfile form h1 {
+  text-align: center;
+}
+
+#newProfile form input#name {
+  width: 100%;
+}
+
+#newProfile form ul li {
+  display: flex;
+  flex-direction: column;
+}
+#newProfile form label {
+  text-align: left;
+  margin-bottom: 0.5rem;
+}
+
+#newProfile form textarea#description {
+  height: 6rem;
+}
+#newProfile form textarea#details {
+  height: 15rem;
+}
+
+#newProfile form button {
+  margin-top: 1rem;
+}
+
+#newProfile form select {
+  width: 130px;
+}
+
+#new-profile-button {
+  margin-top: 1.2rem;
+}

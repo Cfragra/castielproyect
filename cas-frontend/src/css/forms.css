@@ -1,0 +1,46 @@
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+form legend {
+  display: block;
+  text-align: center;
+
+  margin-bottom: 1rem;
+  height: 1rem;
+  font-size: var(--font-l);
+}
+
+fieldset {
+  border: none;
+
+  margin: 0.5rem 0;
+  padding: 0 0.5rem;
+}
+
+fieldset ul {
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem;
+}
+
+fieldset ul li {
+  padding-bottom: 0.5rem;
+}
+
+fieldset label {
+  display: inline-block;
+  width: 8rem;
+  text-align: center;
+  font-size: var(--font-m);
+}
+
+fieldset input {
+  font-size: var(--font-sm);
+}
+
+textarea {
+  resize: none;
+}
